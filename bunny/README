@@ -1,0 +1,43 @@
+Mark Baker & Bradley Kennedy
+CPSC 4050 Project #2
+Stanford Bunny Render
+March 3, 2015
+
+
+INCLUDED FILES:
+**main.cpp ------- Main rendering program using OpenGL to take model and render our object in a space **
+**main.vert ------ Vertex shader file for Phong Shading and our Blinn-Phong Shader ** 
+**main.frag ------ Frag shader file for Phong Shading and our Blinn-Phong Shader ** 
+**loadobj.cpp ---- Object parsing file taking in an .obj file and creating and passing vectors of values ** 
+**capture.png -- Example picture of our rendering using the Clemson lab computers (ex. hornet7) **
+**Makefile ------- Makefile to compile and run our program **
+**README --------- This **
+**bunny.obj ------ Object file for Project **
+
+/*****************************************************************************/
+
+INSTRUCTIONS:
+1. Using the Makefile, call "make" to compile the program (should be no errors)
+2. Call "./main" to run the program and see the rendered image
+3. To quit, simply hit the ESC key or kill the program in the Terminal
+4. To clean, simple call "make clean"
+
+/*****************************************************************************/
+
+DESIGN:
+This project had a lot of help from Dr. Geist and his examples on OpenGL programming from Phong Shading, to Anti-Aliasing, and basic rendering so a lot of code will look similar to the examples we were provided in class and modified to complete this assignment.  
+
+A great thanks to Dr. Geist for his help in suggesting and providing Multisampling versus using an Accumulation Buffer as it drastically improved our rendering on a capable machine to make it look much better Anti-Aliased.  
+
+The design incorporates a logical layout of function calls to start OpenGl, load the object, setup the view space, setup the lights, setup the material, setup the shaders, and then finally draw the image.
+
+/*****************************************************************************/
+
+KNOWN ISSUES:
+There are no known issues at this time in terms of program errors.  All syntax and semantics should be correct and the program should compile and run without any errors using our Makefile and render the object appropriately.
+
+In terms of design, a requirement was asked to implement a normalized Blinn-Phong shader.  To the best of our abilities we believe we successfully implemented this requirement but were not 100% able to confirm a difference with or without it.
+
+Everything else should work as expected.
+
+/*****************************************************************************/

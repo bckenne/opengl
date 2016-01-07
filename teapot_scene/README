@@ -1,0 +1,19 @@
+Mark Baker & Bradley Kennedy
+CPSC 4050 Final Project
+April 23, 2015
+
+To compile:
+Call the command 'make'
+
+To run:
+Call the command './run'
+
+To rotate scene:
+Use left and right arrow keys
+
+To clean files:
+Call command 'make clean'
+
+
+NOTE: There will be some compiler warnings for parsing files and pictures
+      but it does not affect the execution of the program.
